@@ -10,6 +10,16 @@
 
 /* Common styles */
 
+body {
+    font-family: var(--main-font), sans-serif;
+    color: var(--font-color-main);
+    /* check this */
+    font-size: 14px;  
+    background-color: var(--color-basic);
+    letter-spacing: 0.03em;
+    
+}
+
 .list {
     list-style: none;
 }
@@ -18,71 +28,67 @@
     text-decoration: none;
 }
 
-body {
-    font-family: var(--main-font), sans-serif;
-    color: var(--font-color-main)
-    
-}
+
 
 /* Header + footer */
 .logo {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
-    color: var(--font-color-main);
+    color: var(--color-accent);
 }
 
-.accent-logo {
-    color: var(--color-accent);
+.accent-logo-footer {
+    color: var(--color-basic);
+}
+
+.accent-logo-header {
+    color: var(--font-color-main);
 }
 
 .nav {
 
         font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
+        line-height: 1.14;
         letter-spacing: 0.02em;
         color: var(--font-color-main)
 }
 
 .contact {
 
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.02em;
+        font-weight: 400;
+        line-height: 1.14;
         color: var(--font-color-second);
         font-style: normal;
 }
 
 .address {
     
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.02em;
+        font-weight: 400;
+        line-height: 1.14;
         color: var(--color-basic);
         font-style: normal;
 }
 
 .contact:hover,
 .contact:focus,
-.address:hover,
-.address:focus,
 .nav:hover,
 .nav:focus {
     color: var(--color-accent);
 }
 
+.footer {
+    background-color: #2F303A;
+}
 /* Main portfolio */    
 
 .main-button {
-    
+    font-family: var(--main-font);
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.62;    
         text-align: center;
-        letter-spacing: 0.03em;
+        
         
         border-width: 0;
         
@@ -91,7 +97,11 @@ body {
         
         cursor: pointer;
 
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.active {
+    color: var(--color-basic);
+    background-color: var(--color-accent);
 }
 
 .main-button:hover {
@@ -121,12 +131,17 @@ body {
    
         font-size: 16px;
         line-height: 1.88;
-        letter-spacing: 0.03em;
+        
     
         color: var(--font-color-second);
 }
 
 /* Main Studio */
+
+.hero {
+    background-color: #2F303A;;
+}
+
 .hero-head {
 font-family: var(--color-basic);
     font-style: normal;
@@ -144,7 +159,7 @@ font-family: var(--color-basic);
 
 .hero-btn {
 
-    font-style: normal;
+    
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -162,25 +177,23 @@ font-family: var(--color-basic);
 }
 
 
-.header {
+.tittle {
     
-        font-style: normal;
-        font-weight: 700;
+
         font-size: 36px;
-        line-height: 42px;
+        line-height: 1.16;
         text-align: center;
-        letter-spacing: 0.03em;
+        
     
         
 }
 
 .adv-head {
 
-    font-style: normal;
-    font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
+    font-weight: 700;
+    line-height: 1.14;
+  
     text-transform: uppercase;
 
    
@@ -190,12 +203,9 @@ font-family: var(--color-basic);
 
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
     
-
-    letter-spacing: 0.03em;
-
+    
     color: var(--font-color-second);
 
 }
@@ -208,8 +218,6 @@ font-family: var(--color-basic);
         line-height: 1;
        
         text-align: center;
-        letter-spacing: 0.03em;
-    
        
 }
 
@@ -220,7 +228,6 @@ font-family: var(--color-basic);
     line-height: 1;
 
     text-align: center;
-    letter-spacing: 0.03em;
 
     color: var(--font-color-second);
 }
