@@ -55,7 +55,7 @@ body {
 
 .contact {
 
-        font-weight: 400;
+        font-weight: 500;
         line-height: 1.14;
         color: var(--font-color-second);
         font-style: normal;
@@ -177,7 +177,7 @@ font-family: var(--color-basic);
 }
 
 
-.tittle {
+.section-tittle {
     
 
         font-size: 36px;
